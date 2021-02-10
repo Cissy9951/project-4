@@ -1,0 +1,375 @@
+
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 95vw;
+    height: 95vh;
+    display: grid;
+    background-color:rgb(112, 98, 93);
+    grid-template-columns: 20vw 70vw;
+    grid-column-gap: 5vw;
+    animation-play-state: running;
+    transition: animation-play-state 1s;
+    animation-name: colorchange;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes colorchange {
+    0% {background-color:rgb(112, 98, 93);}
+    20% {background-color:rgb(97, 93, 112);}
+    40% {background-color: rgb(107, 93, 112)}
+    60% {background-color: rgb(112, 93, 101);}
+    80% {background-color: rgb(112, 93, 95);}
+    100% {background-color: rgb(112, 98, 93);}
+}
+
+h1 {
+    font-size: 50pt;
+    padding-left: 2vw;
+    color: salmon;
+    line-height: 10px;
+
+}
+
+h2 {
+    font-size: 50pt;
+    color: salmon;
+    line-height: 55pt;
+    padding-left: 2vw;
+}
+
+h3 {
+    font-size: 20pt;
+    color: salmon;
+    line-height: 25pt;
+    padding-left: 2vw;
+}
+
+p {
+    font-size: 24pt;
+    font-weight: 900;
+}
+
+a {
+    color: salmon;
+    display: flex;
+    flex-flow: row;
+    padding-left: 6vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    transition-duration: 2s;
+    border-bottom: 2px solid salmon;
+    align-items: center;
+    height: fit-content;
+}
+
+a:visited {
+    color: salmon;
+}
+
+img {
+
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+    transition-duration: 2s;
+}
+
+
+menu {
+    height: 90vh;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.tab {
+    width: 18%;
+    border-left: 2px solid salmon;
+    text-align: left;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    height: 40%;
+    color: salmon;
+    transition: border-left 0.5s, height 2s;
+    cursor: pointer;
+    font-size: 12pt;
+    font-weight: 600;
+}
+
+.tab:hover {
+    border-left: 2px solid peachpuff;
+    color: peachpuff;
+
+}
+
+main {
+    margin-top: 15px;
+    height: 90vh;
+    background-color: rgba(194, 149, 144, 0.267);
+    overflow-y: auto;
+    border: 2px solid salmon;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px salmon; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(250, 128, 114, 0.5); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(248, 179, 171, 0.5); 
+  }
+.elem {
+    display: none; 
+}
+
+.show{
+    display:flex;
+    flex-flow: column nowrap;
+}
+
+@media only screen and (min-width: 450px) and (max-width: 700px) {
+
+    body{
+
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 20vh 70vh;
+        grid-row-gap: 8vh;
+        overflow-x: hidden;
+        width: 100vw;
+        animation-play-state: running;
+        transition: animation-play-state 1s;
+        animation-name: colorchange;
+        animation-timing-function: ease-out;
+        animation-iteration-count: infinite;
+        animation-duration: 10s;
+        animation-fill-mode: backwards;
+}
+
+@keyframes colorchange {
+    0% {background-color:rgb(112, 98, 93);}
+    20% {background-color:rgb(97, 93, 112);}
+    40% {background-color: rgb(107, 93, 112)}
+    60% {background-color: rgb(112, 93, 101);}
+    80% {background-color: rgb(112, 93, 95);}
+    100% {background-color: rgb(112, 98, 93);}
+}
+
+    menu {
+
+        position: sticky;
+        top: 2vh;
+        height: 20vh;
+        width: 95vw;
+        display: flex;
+        flex-flow: row wrap;
+
+
+    }
+
+    main {
+        position: sticky;
+        width: 95%;
+        height: 95%;
+        background-color: rgba(194, 149, 144, 0.267);
+        overflow-y: auto;
+        border: 2px solid salmon;
+        margin: 0 auto;
+    }
+
+    img {
+        margin-left: 3vw;
+        object-fit: cover;
+        width: 30vw;
+        height: 30vw;
+        transition-duration: 2s;
+    }
+    
+
+    .tab {
+        width: 15%;
+        padding-left: 1%;
+        margin-left: 1%;
+        margin-right: 1%;
+        border-left: 2px solid salmon;
+        text-align: left;
+        writing-mode: horizontal-tb;
+        text-orientation: sideways;
+        height: 40%;
+        color: salmon;
+        transition: border-left 0.5s, height 2s;
+        cursor: pointer;
+        font-size: 10pt;
+        font-weight: 600;
+    
+    }
+
+        h1 {
+        font-size: 30pt;
+        padding-left: 2vw;
+        color: salmon;
+        line-height: 10px;
+    
+    }
+    
+    h2 {
+        font-size: 25pt;
+        color: salmon;
+        line-height: 40pt;
+        padding-left: 2vw;
+    }
+    
+    h3 {
+        font-size: 15pt;
+        color: salmon;
+        line-height: 25pt;
+        padding-left: 2vw;
+    }
+    
+    p {
+        display: flex;
+        flex-flow: row nowrap;
+        font-size: 15pt;
+        padding-left: 6vw;
+        padding-bottom: 2vh;
+        font-weight: 900;
+        color: salmon;
+        transition-duration: 2s;
+        border-bottom: 2px solid salmon;
+    }
+    
+    p:hover {
+        font-size: 20pt;
+    }    
+
+
+}
+/*specify range with more than one media query */
+@media only screen and (min-width: 0px) and (max-width: 450px){
+
+    body{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10vh 83vh;
+        grid-row-gap: 5vh;
+        width: 100vw;
+        animation-play-state: running;
+        transition: animation-play-state 1s;
+        animation-name: colorchange;
+        animation-timing-function: ease-out;
+        animation-iteration-count: infinite;
+        animation-duration: 10s;
+        animation-fill-mode: backwards;
+    }
+    
+    @keyframes colorchange {
+        0% {background-color:rgb(112, 98, 93);}
+        20% {background-color:rgb(97, 93, 112);}
+        40% {background-color: rgb(107, 93, 112)}
+        60% {background-color: rgb(112, 93, 101);}
+        80% {background-color: rgb(112, 93, 95);}
+        100% {background-color: rgb(112, 98, 93);}
+    }
+
+    menu {
+
+        position: sticky;
+        top: 2vh;
+        height: 10vh;
+        width: 95vw;
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0 auto;
+    }
+
+    main {
+        position: sticky;
+        width: 95vw;
+        height: 100%;
+        background-color: rgba(194, 149, 144, 0.267);
+        overflow-y: auto;
+        border: 2px solid salmon;
+        margin-left: auto;
+
+
+
+    }
+
+    img {
+        margin-left: 3vw;
+        object-fit: cover;
+        width: 30vw;
+        height: 30vw;
+        transition-duration: 2s;
+    }
+    
+
+    .tab {
+        width: 17%;
+        padding-left: 1%;
+        border-left: 2px solid salmon;
+        text-align: left;
+        writing-mode: horizontal-tb;
+        text-orientation: sideways;
+        height: 40%;
+        color: salmon;
+        transition: border-left 0.5s, height 2s;
+        cursor: pointer;
+        font-size: 10pt;
+        font-weight: 600;
+    }
+
+    h1 {
+        font-size: 30pt;
+        padding-left: 2vw;
+        color: salmon;
+        line-height: 10px;
+    
+    }
+    
+    h2 {
+        font-size: 25pt;
+        color: salmon;
+        line-height: 40pt;
+        padding-left: 2vw;
+    }
+    
+    h3 {
+        font-size: 15pt;
+        color: salmon;
+        line-height: 25pt;
+        padding-left: 2vw;
+    }
+    
+    p {
+        display: flex;
+        flex-flow: row nowrap;
+        font-size: 15pt;
+        padding-left: 6vw;
+        padding-bottom: 2vh;
+        font-weight: 900;
+        color: salmon;
+        transition-duration: 2s;
+        border-bottom: 2px solid salmon;
+    }
+    
+    p:hover {
+        font-size: 20pt;
+    }    
+}
