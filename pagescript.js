@@ -38,7 +38,6 @@ $(document).ready(function(){
                        }
                    }
            
-           
                    if (clicked.length == 0){
                        $(".navigation").animate({width: "100vw"});
                        clicked.push(this);
@@ -99,7 +98,7 @@ $(document).ready(function(){
                        $(".navigation").animate({height: "100vh"});
                        $(this).animate({height: "3vh"});
                        $(this).css("color", "peachpuff");
-
+                       $(this).siblings().animate({height: "1vh"});
 
                        clicked.push(this);
                
@@ -121,6 +120,8 @@ $(document).ready(function(){
                    } else if (clicked.length != 0 && clicked[0] != this){
                        $(".navigation").animate({height: "100vh"});
                        $(".tab").animate({height: "3vh"});
+                       $(this).siblings().animate({height: "1vh"});
+
 
                        clicked.pop();
                        clicked.push(this);
@@ -133,7 +134,7 @@ $(document).ready(function(){
 
           }
     }
-    
+
     $(".select").mouseover(function(){
         $(this).children("img").css("width", "250px");
         $(this).children("img").css("height", "250px");
