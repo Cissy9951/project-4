@@ -189,7 +189,7 @@ body {
       z-index: 10;
       padding-left: 5vw; 
       width: 100vw;
-      height: 3vh;
+      height: 5vh;
       display: flex;
       flex-flow: row nowrap;
       position: fixed;
@@ -226,7 +226,7 @@ body {
     left: 5vw;
     display: flex;
     flex-flow: column nowrap;
-    top: 6vh;
+    top: 10vh;
   }
   
   .content h1 {
@@ -261,7 +261,7 @@ body {
   .tab {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.25vh;
-    height: 1vh;
+    height: 3vh;
     border-left: 2px solid salmon;
     border-bottom: none;
     text-align: left;
@@ -274,7 +274,7 @@ body {
   }
   
   .tab:hover {
-    height: 3vh;
+    height: 5vh;
     width: 18%;
     color: peachpuff;
     border-left: 2px solid peachpuff;

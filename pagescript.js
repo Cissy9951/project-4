@@ -20,6 +20,7 @@ $(document).ready(function(){
            
                 if (x == "close" || x == "home"){
                    $(".navigation").css("width", "5vw");
+                   $(".tab").animate({width: "1vw"});
                    for (i=0;i<array2.length;i++){
                        array2[i].removeClass("show");
                        array2[i].addClass("elem");
@@ -40,10 +41,15 @@ $(document).ready(function(){
            
                    if (clicked.length == 0){
                        $(".navigation").animate({width: "100vw"});
+                       $(this).animate({width: "5vw"});
+                       $(this).siblings().css("width", "1vw");
+
+
                        clicked.push(this);
                
                    } else if (clicked.length != 0 && clicked[0] == this){
                        $(".navigation").animate({width: "5vw"});
+                       $(".tab").animate({width: "1vw"});
                        clicked.pop();
                        for (i=0;i<array1.length;i++){
                            array2[i].removeClass("show");
@@ -54,7 +60,9 @@ $(document).ready(function(){
            
                    } else if (clicked.length != 0 && clicked[0] != this){
                        $(".navigation").animate({width: "100vw"});
-                       
+                       $(this).animate({width: "5vw"});
+                       $(this).siblings().css("width", "1vw");
+
                        clicked.pop();
                        clicked.push(this);
                    }
@@ -70,10 +78,8 @@ $(document).ready(function(){
                 let x = $(this).attr("id");
            
                 if (x == "close" || x == "home"){
-                   $(".navigation").css("height", "3vh");
-                   $(".tab").animate({height: "1vh"});
-                   $(".tab").css("border-left", "2px, solid, salmon");
-                   $(".tab").css("color", "salmon");
+                   $(".navigation").css("height", "5vh");
+                   $(".tab").animate({height: "3vh"});
 
 
                    for (i=0;i<array2.length;i++){
@@ -96,17 +102,15 @@ $(document).ready(function(){
            
                    if (clicked.length == 0){
                        $(".navigation").animate({height: "100vh"});
-                       $(this).animate({height: "3vh"});
-                       $(this).css("color", "peachpuff");
-                       $(this).siblings().animate({height: "1vh"});
+                       $(this).animate({height: "100%"});
+                       $(this).siblings().animate({height: "3vh"});
 
                        clicked.push(this);
                
                    } else if (clicked.length != 0 && clicked[0] == this){
-                       $(".navigation").animate({height: "3vh"});
-                       $(".tab").animate({height: "1vh"});
+                       $(".navigation").animate({height: "5vh"});
+                       $(".tab").animate({height: "3vh"});
                        $(".tab").css("border-left", "2px, solid, salmon");
-                       $(".tab").css("color", "salmon");
     
 
                        clicked.pop();
@@ -119,8 +123,8 @@ $(document).ready(function(){
            
                    } else if (clicked.length != 0 && clicked[0] != this){
                        $(".navigation").animate({height: "100vh"});
-                       $(".tab").animate({height: "3vh"});
-                       $(this).siblings().animate({height: "1vh"});
+                       $(this).animate({height: "100%"});
+                       $(this).siblings().css("height", "3vh");
 
 
                        clicked.pop();
