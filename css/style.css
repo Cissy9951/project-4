@@ -49,6 +49,7 @@ h3 {
 }
 
 p {
+    margin-left: 50px;
     font-size: 24pt;
     font-weight: 900;
 }
@@ -243,6 +244,8 @@ main {
     }
     
     p {
+        margin-left: 50px;
+
         display: flex;
         flex-flow: row nowrap;
         font-size: 15pt;
@@ -251,7 +254,6 @@ main {
         font-weight: 900;
         color: salmon;
         transition-duration: 2s;
-        border-bottom: 2px solid salmon;
     }
     
     p:hover {
@@ -358,6 +360,8 @@ main {
     }
     
     p {
+        margin-left: 50px;
+
         display: flex;
         flex-flow: row nowrap;
         font-size: 15pt;
@@ -366,7 +370,6 @@ main {
         font-weight: 900;
         color: salmon;
         transition-duration: 2s;
-        border-bottom: 2px solid salmon;
     }
     
     p:hover {
