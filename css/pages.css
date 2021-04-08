@@ -9,11 +9,8 @@ body {
   margin-bottom: 5vw;
 }
 
-.content video {
-  width: 100%;
-  height: auto;
-  margin-bottom: 5vw;
-
+.content iframe {
+  margin-left: 2vw;
 }
 
 .content p {
@@ -220,11 +217,10 @@ p {
   height: auto;
 }
 
-.content video {
-  width: 100%;
-  height: auto;
-  
+.content iframe {
+  margin-left: 2vw;
 }
+
 
 .content p {
   text-align: left;
