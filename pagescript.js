@@ -5,19 +5,43 @@ $(document).ready(function(){
     let array1 = ["design", "art", "digital"];
     let array2 = [design, art, digital];
     let clicked = [];
-
+    let empty = [];
 
 
     function change(){
         const large = window.matchMedia("(min-width: 700px)");
         const small = window.matchMedia("(min-width: 0px) and (max-width: 700px)")
+
+    // document.getElementsByClassName("navigation")[0].addEventListener("click", function(){
+    //     if($(this).data("clicked", true) && clicked.length == 1 && $(this).attr("class" != "tab")){
+    //         empty.push("1");
+    //         console.log(empty);
+
+    //         }
+
+    //         if (empty.length >= 2 && clicked.length == 1){
+    //             $(".navigation").animate({width: "5vw"});
+    //             $(".tab").animate({width: "1vw"});
+    //             clicked.pop();
+    //             for (i=0;i<array1.length;i++){
+    //                 array2[i].removeClass("show");
+    //                 array2[i].addClass("elem");
+        
+    //             }
+    //             empty.splice(0, empty.length);
+        
+    //         }
+        
+    // })
+
     
         if (large.matches) {
 
-            $(".tab").click(function(){
+
+            $(".tab").click(function(event){
 
                 let x = $(this).attr("id");
-           
+
                 if (x == "close" || x == "home"){
                    $(".navigation").css("width", "5vw");
                    $(".tab").animate({width: "1vw"});
