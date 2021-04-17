@@ -207,16 +207,14 @@ body {
 
   .gallery img {
     width:100vw;
-    height: auto;
-    justify-content: center;
-    margin: 0 auto;
+    object-fit: contain;
 }
 
 .gallery {
     width: 100%;
     margin: 0 auto;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
     justify-content: center;
 }
   
