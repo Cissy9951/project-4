@@ -20,8 +20,6 @@ body {
 
 .gallery {
     width: 100%;
-    object-fit: scale-down;
-
     margin: 0 auto;
     display: flex;
     flex-flow: row wrap;
@@ -209,7 +207,7 @@ body {
   }
 
   .gallery img {
-    width:50%;
+    width:30vw;
     height: auto;
     justify-content: center;
     margin: 0 auto;
@@ -217,7 +215,6 @@ body {
 
 .gallery {
     width: 100%;
-    height: auto;
     object-fit: contain;
     margin: 0 auto;
     display: flex;
