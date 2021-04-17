@@ -166,12 +166,12 @@ $(document).ready(function(){
     $(".select").mouseover(function(){
         $(this).children("img").css("width", "250px");
         $(this).children("img").css("height", "250px");
-        $(this).siblings().children("img").css("width", "50px");
-        $(this).siblings().children("img").css("height", "50px");
+        $(this).siblings().children("img").css("width", "200px");
+        $(this).siblings().children("img").css("height", "200px");
     })
     $(".select").mouseleave(function(){
-        $(this).children("img").css("width", "50px");
-        $(this).children("img").css("height", "50px");
+        $(this).children("img").css("width", "200px");
+        $(this).children("img").css("height", "200px");
     })
 
     change();

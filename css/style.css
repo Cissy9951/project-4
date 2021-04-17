@@ -18,13 +18,7 @@ body{
     display: grid;
     grid-template-columns: 20vw 70vw;
     grid-column-gap: 5vw;
-    animation-play-state: running;
-    transition: animation-play-state 1s;
-    animation-name: colorchange;
-    animation-timing-function: ease-out;
-    animation-iteration-count: infinite;
-    animation-duration: 10s;
-    animation-fill-mode: backwards;
+
 }
 
 h1 {
@@ -47,12 +41,14 @@ h3 {
     color: var(--words1);
     line-height: 25pt;
     padding-left: 2vw;
+    font-weight: 500;
+
 }
 
 p {
     margin-left: 50px;
     font-size: 24pt;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 a {
@@ -76,8 +72,8 @@ a:visited {
 img {
 
     object-fit: cover;
-    width: 70px;
-    height: 70px;
+    width: 200px;
+    height: 200px;
     transition-duration: 2s;
 }
 
@@ -100,7 +96,7 @@ menu {
     transition: border-left 0.5s, height 2s;
     cursor: pointer;
     font-size: 12pt;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .tab:hover {

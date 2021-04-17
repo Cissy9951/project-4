@@ -14,6 +14,7 @@ body {
 
 .gallery img {
     width:30vw;
+    height: fit-content;
     object-fit: contain;
 }
 
