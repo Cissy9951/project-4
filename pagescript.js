@@ -5,7 +5,7 @@ $(document).ready(function(){
     let array1 = ["design", "art", "digital"];
     let array2 = [design, art, digital];
     let clicked = [];
-    let empty = [];
+    // let empty = [];
 
 
     function change(){
