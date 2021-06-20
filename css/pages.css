@@ -12,17 +12,90 @@ body {
   background-color: var(--bkg1);
 }
 
+#backtotop {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: fixed;
+  z-index:9999;
+  left: 95%;
+  top: calc(50% - 25px);
+  background-color: var(--words2);
+  color: white;
+  border: var(--words2);
+  width: 50px;
+  height: 50px;
+  font-size: 10pt;
+}
+
+#backtotop:hover{
+  background-color: white;
+  color: var(--words2);
+  border: var(--words2);
+}
+
+button {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: fixed;
+  z-index:9999;
+  left: calc(85% + 4px);
+  top: 15%;
+  background-color: var(--words2);
+  color: white;
+  border: var(--words2);
+  width: 50px;
+  height: 50px;
+  font-size: 30pt;
+}
+
+button:hover{
+  background-color: white;
+  color: var(--words2);
+  border: var(--words2);
+}
+
 .content img {
   width: 100%;
   height: auto;
-  margin-bottom: 5vw;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+
+}
+
+
+.gifs {
+  width: auto;
+  margin-left: 5%;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+.gifs img {
+  width: 30%;
+  height: auto;
+  flex-flow: row-wrap;
+  justify-content:center;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
 }
 
 .content iframe {
-  margin-left: 2vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
 }
 
 .content p {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 98%;
+  font-size: 15pt;
+  font-weight: 500;
+  margin-left: 0vw;
+
+}
+
+.content ol {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   width: 80%;
   font-size: 15pt;
@@ -31,9 +104,8 @@ body {
 
 .content h1 {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+  margin-left: 0vw;
   font-size: 50pt;
-  padding-left: 2vw;
   color: var(--scrollbar2);
   line-height: 30pt;
 }
@@ -51,20 +123,27 @@ a:visited {
   color: var(--words2);
 }
 
+a:link {
+  color: var(--words2);
+}
 
 h1 {
   font-size: 50pt;
-  padding-left: 2vw;
   color: var(--words2);
   line-height: 10px;
-
+  margin-left: 2vw;
 }
 
 p {
   font-size: 24pt;
   font-weight: 900;
   color: var(--words1);
-  padding-left: 2vw;
+  margin-left: 2vw;
+
+}
+
+p:visited {
+  color: var(--words2);
 }
 
 .select {
@@ -140,18 +219,13 @@ p {
     padding-top: 10vh; 
     width: 5vw;
     height: 100vh;
+    padding-top: 18vh;
     display: flex;
     flex-flow: column nowrap;
     position: fixed;
     left: 0px;
     top: 0vh;
-    animation-play-state: running;
-    transition: animation-play-state 1s;
-    animation-name: colorchange;
-    animation-timing-function: ease-out;
-    animation-iteration-count: infinite;
-    animation-duration: 10s;
-    animation-fill-mode: backwards;
+
     background-color:rgba(255, 255, 255, 0.75);
 }
 
@@ -163,17 +237,9 @@ p {
     height: 8vh;
     border-bottom: 2px solid var(--words2);
     text-align: left;
-    width: 1vw;
+    width: 3.5vw;
     color: var(--words2);
-    transition: border-left 0.5s, width 1.5s;
     cursor: pointer;
-}
-
-.tab:hover {
-    border-bottom: 2px solid var(--words1);
-    width: 5vw;
-    color: var(--words1);
-
 }
 
 
@@ -190,15 +256,9 @@ p {
     position: fixed;
     left: 0px;
     top: 0vh;
-    animation-play-state: running;
-    transition: animation-play-state 1s;
-    animation-name: colorchange;
-    animation-timing-function: ease-out;
-    animation-iteration-count: infinite;
-    animation-duration: 10s;
-    animation-fill-mode: backwards;
     background-color:rgba(255, 255, 255, 0.75);
 }
+
 
 .content img {
   width: 100%;

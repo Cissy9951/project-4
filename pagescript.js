@@ -12,44 +12,36 @@ $(document).ready(function(){
         const large = window.matchMedia("(min-width: 700px)");
         const small = window.matchMedia("(min-width: 0px) and (max-width: 700px)")
 
-    // document.getElementsByClassName("navigation")[0].addEventListener("click", function(){
-    //     if($(this).data("clicked", true) && clicked.length == 1 && $(this).attr("class" != "tab")){
-    //         empty.push("1");
-    //         console.log(empty);
-
-    //         }
-
-    //         if (empty.length >= 2 && clicked.length == 1){
-    //             $(".navigation").animate({width: "5vw"});
-    //             $(".tab").animate({width: "1vw"});
-    //             clicked.pop();
-    //             for (i=0;i<array1.length;i++){
-    //                 array2[i].removeClass("show");
-    //                 array2[i].addClass("elem");
-        
-    //             }
-    //             empty.splice(0, empty.length);
-        
-    //         }
-        
-    // })
-
     
         if (large.matches) {
 
+            $(".button").click(function(event){
+                let x = $(this).attr("class");
+
+                if (x == "button"){
+                    $(".navigation").css("width", "5vw");
+                    $(".tab").animate({width: "3.5vw"});
+                    clicked.pop();
+
+                    for (i=0;i<array2.length;i++){
+                        array2[i].removeClass("show");
+                        array2[i].addClass("elem");
+                    }
+                }
+            })
 
             $(".tab").click(function(event){
 
                 let x = $(this).attr("id");
 
-                if (x == "close" || x == "home"){
+                if (x == "home"){
                    $(".navigation").css("width", "5vw");
-                   $(".tab").animate({width: "1vw"});
+                   $(".tab").animate({width: "3.5vw"});
                    for (i=0;i<array2.length;i++){
                        array2[i].removeClass("show");
                        array2[i].addClass("elem");
                    }
-               } else if (x != "close" || x != "home"){
+               } else if (x != "home"){
                    for (i=0;i<array1.length;i++){
                        if (array1[i] == x){
                            array2[i].removeClass("elem");
@@ -66,14 +58,14 @@ $(document).ready(function(){
                    if (clicked.length == 0){
                        $(".navigation").animate({width: "100vw"});
                        $(this).animate({width: "5vw"});
-                       $(this).siblings().css("width", "1vw");
+                       $(this).siblings().css("width", "3.5vw");
 
 
                        clicked.push(this);
                
                    } else if (clicked.length != 0 && clicked[0] == this){
                        $(".navigation").animate({width: "5vw"});
-                       $(".tab").animate({width: "1vw"});
+                       $(".tab").animate({width: "3.5vw"});
                        clicked.pop();
                        for (i=0;i<array1.length;i++){
                            array2[i].removeClass("show");
@@ -85,7 +77,7 @@ $(document).ready(function(){
                    } else if (clicked.length != 0 && clicked[0] != this){
                        $(".navigation").animate({width: "100vw"});
                        $(this).animate({width: "5vw"});
-                       $(this).siblings().css("width", "1vw");
+                       $(this).siblings().css("width", "3.5vw");
 
                        clicked.pop();
                        clicked.push(this);
@@ -93,6 +85,7 @@ $(document).ready(function(){
            
                }
            
+               
            
                })
            
