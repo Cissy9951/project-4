@@ -300,7 +300,30 @@ p:visited {
 }
 
 
+#backtotop {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: fixed;
+  z-index:9999;
+  left: 82%;
+  top: 0%;
+  background-color: var(--words2);
+  color: white;
+  border: var(--words2);
+  width: 5vh;
+  height: 5vh;
+  font-size: 1.2vh;
+}
 
+#backtotop:hover{
+  background-color: white;
+  color: var(--words2);
+  border: var(--words2);
+}
+
+button {
+
+  font-size: 20pt;
+}
 
 .tab {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

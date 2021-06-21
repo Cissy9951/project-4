@@ -90,11 +90,31 @@ $(document).ready(function(){
                })
            
           } else if (small.matches){
+
+
+            $(".button").click(function(event){
+                let x = $(this).attr("class");
+
+                if (x == "button"){
+                    $(".navigation").animate({height: "5vh"});
+                    $(".tab").animate({height: "3vh"});
+                    $(".tab").css("border-left", "2px, solid, salmon");
+                    clicked.pop();
+
+                    for (i=0;i<array2.length;i++){
+                        array2[i].removeClass("show");
+                        array2[i].addClass("elem");
+                    }
+                }
+            })
+
+
+
             $(".tab").click(function(){
 
                 let x = $(this).attr("id");
            
-                if (x == "close" || x == "home"){
+                if (x == "home"){
                    $(".navigation").css("height", "5vh");
                    $(".tab").animate({height: "3vh"});
 
@@ -103,7 +123,7 @@ $(document).ready(function(){
                        array2[i].removeClass("show");
                        array2[i].addClass("elem");
                    }
-               } else if (x != "close" || x != "home"){
+               } else if (x != "home"){
                    for (i=0;i<array1.length;i++){
                        if (array1[i] == x){
                            array2[i].removeClass("elem");
