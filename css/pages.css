@@ -84,6 +84,8 @@ button:hover{
   margin-right: auto;
   margin-top: 2vw;
   margin-bottom: 2vw;
+  width:854px;
+  height:480px;
 }
 
 .content p {
@@ -266,7 +268,8 @@ p:visited {
 }
 
 .content iframe {
-  margin-left: 2vw;
+  width:371.3px;
+  height:208.7px;
 }
 
 
